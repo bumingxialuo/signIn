@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HEESignInViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)signInBtnClick:(id)sender {
+    HEESignInViewController *vc = [[HEESignInViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
